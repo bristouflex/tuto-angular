@@ -5,11 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './appareil.component.html',
   styleUrls: ['./appareil.component.scss']
 })
+
 export class AppareilComponent implements OnInit {
+
+  appareilName: string = 'Machine à laver';
+  appareilStatus: string = 'éteint';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  getStatus(){
+    return this.appareilStatus;
   }
 
 }
